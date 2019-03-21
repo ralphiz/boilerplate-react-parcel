@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <Link to="/">Ralph's Boilerplate</Link>
+          <Link to="/">Ralph&#39;s Boilerplate</Link>
         </header>
         <Router>
           <Home path="/" />
