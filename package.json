@@ -4,9 +4,10 @@
   "description": "Boilerplate for React",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "npm run tailwind:css && parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\" "
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\" ",
+    "tailwind:css": "tailwind build src/styles/tailwind.src.css -c  tailwind.js -o src/styles/tailwind.css"
   },
   "author": "Ralph Cacho",
   "license": "ISC",
@@ -19,7 +20,8 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "tailwindcss": "^0.7.4"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
