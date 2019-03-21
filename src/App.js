@@ -9,8 +9,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header>
-          <Link to="/">Ralph&#39;s Boilerplate</Link>
+        <header className="w-full">
+          <nav className="container mx-auto flex items-center justify-between flex-wrap py-3">
+            <Link to="/">Ralph&#39;s Boilerplate</Link>
+          </nav>
         </header>
         <Router>
           <Home path="/" />
