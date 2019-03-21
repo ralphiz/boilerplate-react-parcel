@@ -1,1 +1,1 @@
-{"version":3,"sources":["styles/main.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA","file":"main.d2070829.css","sourceRoot":"../src","sourcesContent":["body {\n  background-color: #444;\n}\n"]}
+{"version":3,"sources":["../node_modules/tailwindcss/preflight.css","../node_modules/tailwindcss/components.css","../node_modules/tailwindcss/utilities.css"],"names":[],"mappings":"AAAA;AACA;ACDA;AACA;ACDA;AACA","file":"main.d2070829.css","sourceRoot":"../src","sourcesContent":["@tailwind preflight;\n","@tailwind components;\n","@tailwind utilities;\n"]}

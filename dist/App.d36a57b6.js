@@ -4913,7 +4913,29 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Home = function Home() {
-  return _react.default.createElement("div", null, "This is the Home component.");
+  return _react.default.createElement("div", {
+    className: "container mx-auto"
+  }, _react.default.createElement("h1", null, "This is the Home component."), _react.default.createElement("div", {
+    className: "max-w-sm rounded overflow-hidden shadow-lg"
+  }, _react.default.createElement("img", {
+    className: "w-full",
+    src: "https://tailwindcss.com/img/card-top.jpg",
+    alt: "Sunset in the mountains"
+  }), _react.default.createElement("div", {
+    className: "px-6 py-4"
+  }, _react.default.createElement("div", {
+    className: "font-bold text-xl mb-2"
+  }, "The Coldest Sunset"), _react.default.createElement("p", {
+    className: "text-grey-darker text-base"
+  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.")), _react.default.createElement("div", {
+    className: "px-6 py-4"
+  }, _react.default.createElement("span", {
+    className: "inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"
+  }, "#photography"), _react.default.createElement("span", {
+    className: "inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2"
+  }, "#travel"), _react.default.createElement("span", {
+    className: "inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker"
+  }, "#winter"))));
 };
 
 var _default = Home;
@@ -28416,9 +28438,13 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("header", null, _react.default.createElement(_router.Link, {
+      return _react.default.createElement("div", null, _react.default.createElement("header", {
+        className: "w-full"
+      }, _react.default.createElement("nav", {
+        className: "container mx-auto flex items-center justify-between flex-wrap py-3"
+      }, _react.default.createElement(_router.Link, {
         to: "/"
-      }, "Ralph's Boilerplate")), _react.default.createElement(_router.Router, null, _react.default.createElement(_Home.default, {
+      }, "Ralph's Boilerplate"))), _react.default.createElement(_router.Router, null, _react.default.createElement(_Home.default, {
         path: "/"
       }), _react.default.createElement(_Contact.default, {
         path: "/contact"
@@ -28458,7 +28484,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58877" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60562" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
