@@ -49,3 +49,6 @@ class App extends React.Component {
 }
 
 render(<App />, document.getElementById("root"));
+
+// Sources / Credit
+// Navigation: https://tailwindcomponents.com/component/responsive-navbar
