@@ -1,3 +1,7 @@
+/**
+ * TODO:
+ * - Extract navigation to a seprate component.
+ */
 import { Link, Router } from "@reach/router";
 
 import Contact from "./components/Contact";
@@ -50,5 +54,7 @@ class App extends React.Component {
 
 render(<App />, document.getElementById("root"));
 
-// Sources / Credit
-// Navigation: https://tailwindcomponents.com/component/responsive-navbar
+/**
+ * Sources / Credit
+ * Navigation: https://tailwindcomponents.com/component/responsive-navbar
+ */
