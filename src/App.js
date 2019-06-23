@@ -9,9 +9,34 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header className="w-full">
-          <nav className="container mx-auto flex items-center justify-between flex-wrap py-3">
-            <Link to="/">Ralph&#39;s Boilerplate</Link>
+        <header>
+          <nav className="relative select-none bg-grey lg:flex lg:items-stretch w-full">
+            {/* Top left of navigation */}
+            <div className="flex flex-no-shrink items-stretch h-12">
+              <Link
+                className="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-white no-underline flex items-center hover:bg-grey-dark"
+                to="/"
+              >
+                Ralph&#39;s Boilerplate
+              </Link>
+            </div>
+            {/* Top right links start here */}
+            <div className="lg:flex lg:items-stretch lg:flex-no-shrink lg:flex-grow">
+              <div className="lg:flex lg:items-stretch lg:justify-end ml-auto">
+                <Link
+                  className="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-white no-underline flex items-center hover:bg-grey-dark"
+                  to="/"
+                >
+                  Home
+                </Link>
+                <Link
+                  className="flex-no-grow flex-no-shrink relative py-2 px-4 leading-normal text-white no-underline flex items-center hover:bg-grey-dark"
+                  to="/contact"
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
           </nav>
         </header>
         <Router>

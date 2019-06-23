@@ -7,7 +7,7 @@
     "dev": "npm run tailwind:css && parcel src/index.html",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\" ",
-    "tailwind:css": "tailwind build src/styles/tailwind.src.css -c  tailwind.js -o src/styles/tailwind.css"
+    "tailwind:css": "tailwind build src/styles/tailwind.src.css -c tailwind.js -o src/styles/tailwind.css"
   },
   "author": "Ralph Cacho",
   "license": "ISC",
